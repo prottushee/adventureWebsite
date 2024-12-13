@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar"> 
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a href="#"></a>Contact</li>
+        </ul>
+        <img src="./AdventureWebstieImages/img/menu-btn.png" alt="Menu" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore the Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./AdventureWebstieImages/img/img1.png" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, et aperiam! Ratione minima libero iusto odit, in maxime quia. Vitae libero pariatur repellendus quisquam quo nam! Eveniet ex voluptatum earum iure, incidunt culpa commodi esse eum, alias voluptas ipsum saepe distinctio hic optio error nisi maxime? Nostrum culpa nulla iure eius quae placeat, vel, incidunt facere dolores tempore possimus, ipsa porro necessitatibus rem iste voluptas nemo. Mollitia aspernatur molestiae, iure alias nisi molestias deserunt reprehenderit praesentium dolorem omnis voluptatibus hic consequatur. Quasi soluta et dolore quia cum nobis ut repudiandae autem eveniet consequuntur reiciendis ipsa, recusandae alias libero totam voluptatum.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./AdventureWebstieImages/img/img2.png" alt="">
+                <h4>Walking Holidays</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, et aperiam! Ratione minima libero iusto odit, in maxime quia. Vitae libero pariatur repellendus quisquam quo nam! Eveniet ex voluptatum earum iure, incidunt culpa commodi esse eum, alias voluptas ipsum saepe distinctio hic optio error nisi maxime? Nostrum culpa nulla iure eius quae placeat, vel, incidunt facere dolores tempore possimus, ipsa porro necessitatibus rem iste voluptas nemo. Mollitia aspernatur molestiae, iure alias nisi molestias deserunt reprehenderit praesentium dolorem omnis voluptatibus hic consequatur. Quasi soluta et dolore quia cum nobis ut repudiandae autem eveniet consequuntur reiciendis ipsa, recusandae alias libero totam voluptatum.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+</div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque officia tempore, non molestiae necessitatibus quasi voluptates doloribus, id tempora, eius quos expedita illum magni animi.</p>
+        <a href="#" class="ctn">Learn More</a>
+    </div>
+    </section>
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Upcoming Tours & Destinations</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatibus placeat tenetur iste laborum, qui hic quis vitae temporibus et ad blanditiis iusto sapiente veritatis ex, quasi delectus. Dignissimos quam quae cum, dolore eius, alias atque pariatur ipsam corrupti nesciunt omnis blanditiis consequuntur nihil obcaecati eos voluptate numquam, voluptatibus quod vel dolor minima. Aliquid, beatae ratione culpa sequi nam a dicta magnam consequatur ipsum cumque alias doloribus, optio enim sint non totam aspernatur, obcaecati asperiores. Quidem, atque laudantium veniam nihil et repellendus animi magnam ipsam, dolorum, perspiciatis impedit unde recusandae sit earum voluptatem tempora est quis nobis. In, aspernatur repellendus?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./AdventureWebstieImages/img/img3.png" alt="">
+                    <img src="./AdventureWebstieImages/img/img4.png" alt="">
+                    <img src="./AdventureWebstieImages/img/img5.png" alt="">
+                    <img src="./AdventureWebstieImages/img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>123 fifth 6 avenue, road 11, Mirpur, Dhaka | Phone: 880 927381 | Email: contact@adventures.com</p>
+        <p>Copyright 2020 Outdoor Adventure</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+    </script>
+</body>
+</html>
