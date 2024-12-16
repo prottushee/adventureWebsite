@@ -12,17 +12,18 @@ a {
 
 ul {
     list-style: none;
-    font-size: 125%;
 }
 
 body, html{
     overflow-x: hidden;
 }
 .active {
-    color: rgb(149, 83, 83);
+    color: rgb(19, 2, 2);
     background-color: rgb(209, 137, 137);
+    padding: 0.25%;
     text-decoration: underline;
     font-weight: bold;
+    border-radius: 10%;
 }
 
 .navbar {
@@ -32,11 +33,14 @@ body, html{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 20px;
+    padding: 2%;
     color: whitesmoke;
 }
-
+.logo{
+    font-size: 3.5vmin;
+}
 .nav-links {
+    font-size: 3vmin;
     display: flex;
     align-items: center;
 }
@@ -67,7 +71,7 @@ header {
 }
 
 .line {
-    width: 150px;
+    width: 25%;
     height: 4px;
     background: rgb(145, 44, 44);
     margin: 10px auto;
@@ -81,9 +85,9 @@ header {
 }
 
 .ctn {
-    padding: 8px 15px;
+    padding: 0.75%;
     background: rgb(145, 44, 44);
-    border-radius: 20px;
+    border-radius: 10%;
     color: whitesmoke;
 }
 
@@ -127,13 +131,15 @@ h4{
     color: #484872;
     margin: 20px auto;
 }
-p{
+p{  
+    font-size: 2vmin;
     color: #7c7c7c;
     padding: 0px 40px;
 }
 
 .events .ctn{
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 .explore{
     width: 100%;
@@ -170,6 +176,8 @@ p{
 
 }
 
+/* Upcoming section */
+
 .content-col{
     width: 40%;
 }
@@ -183,8 +191,8 @@ p{
     align-items:center;
 }
 .image-gallery img{
-    max-width: 300px;
-    max-height: 175px;
+    width: 300px;
+    height: 175px;
     margin: 10px; 
 }
 .content-col h1{
@@ -214,9 +222,121 @@ p{
     margin: 20px;
 }
 
-/** Mobile device **/
-@media only screen and (max-width: 850px) {
+/* Extra Extra Large */
+@media only screen and (min-width: 1400px){
+    .header{
+        height: 100vh;
+    }
+    .logo{
+        top:0;
+        font-size: 4.5vmin;
+    }
+    .header-content{
+        margin: auto;
+    }
+    .header-content h2 {
+        font-size: 6vmin;
+    }
+    .header-content h1 {
+        font-size: 7vmin;
+    }
+    .ctn {
+        font-size: 3.5vmin;
+    }    
+    .tours .content-col h1 {
+        font-size: 7vmin;
+    }
+
+    .image-gallery img {
+        width: 300px;
+        height: 200px;
+    }
+}
+/* Extra Large */
+@media only screen and (max-width: 1399px) and (min-width: 1200px) {
+    header {
+        height: 80vh;
+    }
+    .logo{
+      font-size: 3vmin;
+      margin-left: 2%;
+    }
+    .header-content{
+        margin: auto;
+    }
+    .header-content h2 {
+        font-size: 5vmin;
+    }
+    .header-content h1 {
+        font-size: 6vmin;
+    }
+    .ctn {
+        font-size: 3.25vmin ;
+    }
+    
+    .events .row {
+        flex-direction: column;
+    }
+    .events .col {
+        margin-bottom: 30px;
+    }
+    .tours .content-col h1 {
+        font-size: 6.5vmin;
+    }
+
+    .image-gallery img {
+        width: 250px;
+        height: 175px;
+    }
+}
+
+/* Large */
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    header {
+        height: 80vh;
+    }
+    .header-content{
+        margin:auto;
+    }
+    .logo{
+        font-size: 4vmin;
+    }
+  
+    .header-content h2 {
+        font-size: 5vmin;
+    }
+    .header-content h1 {
+        font-size: 6vmin;
+    }
+    .ctn {
+        font-size: 3vmin;
+    }
+    
+    .events .row {
+        flex-direction: column;
+    }
+    .events .col {
+        margin-bottom: 30px;
+    }
+    .explore-content {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .tours .content-col h1 {
+        font-size: 6vmin;
+    }
+
+    .image-gallery img {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+/*Medium */
+@media only screen and (max-width: 991px) and (min-width: 768px){
     .menu-btn{
+        width: 30px;
         display:block;
     }
     .navbar {
@@ -235,15 +355,216 @@ p{
         background-color: rgb(155, 155, 209);
         margin-top: -100vh;  
         transition: margin 0.3s ease-in-out; 
-    }
+    } 
     .mobile-menu {
         margin: 0;
     }
     .nav-links li {
         margin: 30px auto;
     }
-    .row{
-        display: flex;
+
+    header {
+        height: 70vh;
+    }
+
+    .header-content {
+        margin: auto;
+    }
+
+    .header-content h2 {
+        font-size: 4vmin;
+    }
+
+    .header-content h1 {
+        font-size: 5vmin;
+    }
+    .ctn {
+        font-size: 2.5vmin;
+    }
+    .explore-content h1 {
+        font-size: 5vmin;
+    }
+    .events .row {
         flex-direction: column;
     }
+    .events .col {
+        margin-bottom: 30px;
+    }
+    .tours .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .image-gallery img {
+        width: 200px;
+        height: 150px;
+    }
+    .tours .content-col h1 {
+        font-size: 6vmin;
+    }
+
+
+
+    .footer p {
+        font-size: 2.5vmin;
+    }
+}
+
+/* Small */
+@media only screen and (max-width: 767px) and (min-width: 576px){
+   .menu-btn{
+        width: 25px;
+        display: block;
+   }
+   .navbar{
+    padding: 0;
+   }
+   .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+   .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(155, 155, 209);
+        margin-top: -100vh;  
+        transition: margin 0.3s ease-in-out; 
+   }
+   .mobile-menu{
+        margin:0;
+    }
+    .nav-links li{
+        font-size: medium;
+        margin: 30px auto;
+    }
+    header {
+        height: 60vh;
+    }
+    .header-content{
+        margin:auto;
+    }
+    .header-content h2 {
+        font-size: 3vmin;
+    }
+
+    .header-content h1 {
+        font-size: 4vmin;
+    }
+    .ctn{
+        font-size: 2vmin;
+    }
+    .events .row {
+        flex-direction: column;
+    }
+
+    .explore-content {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .explore-content h1 {
+        font-size: 4vmin;
+    }
+    .tours .row{
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+    }
+   
+    .footer {
+        padding: 10px;
+    }
+
+    .footer p {
+        font-size: 2vmin;
+    }
+}
+
+/* Extra Small */
+@media only screen and (max-width: 575px) {
+    .logo {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        font-size: 3vmin;
+    }
+
+    .menu-btn {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        width: 10px;
+        display: block;
+    }
+    .navbar{
+        padding:0;
+     }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(155, 155, 209);
+        margin-top: -100vh;
+        transition: margin 0.3 ease-in-out;
+    }
+    .nav-links li{
+        font-size: small;
+        margin: 20px auto;
+    }
+    .mobile-menu{
+        margin:0;
+    }
+    header {
+        height: 40vh;
+    }
+    .header-content{
+        margin: auto;
+    }
+    .header-content h2 {
+        font-size: 3vmin;
+    }
+    .header-content h1 {
+        font-size: 3.5vmin;
+    }
+    .ctn{
+        font-size: 1.75vmin;
+    }
+    .events .row {
+        flex-direction: column;
+    }
+    .events .row .col img{
+        width: 80%;
+    }
+
+
+    .explore-content {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .explore-content h1 {
+        font-size: 3.5vmin;
+    }
+    .tours .row{
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+    }
+    .image-gallery img{
+        width: 80%;
+        height: 25%;
+    }
+   
+    .footer {
+        padding: 2%;
+    }
+
+    .footer p {
+        font-size: 1.7vmin;
+    }
+
 }
